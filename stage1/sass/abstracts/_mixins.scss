@@ -5,3 +5,11 @@
         clear: both;
     }
 }
+
+@mixin colorful-text {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; // font color should not block the background color
+}
